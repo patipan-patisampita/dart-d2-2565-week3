@@ -12,9 +12,13 @@ void main() {
   //Map fruits = Map();
   print(fruits);
 
-  print('ญี่ปุ่น Score is ${volleyball['ญี่ปุ่น']}');
-  print('สหรัฐอเมริกา Score is ${volleyball['สหรัฐอเมริกา']}');
-  print('ตุรกี Score is ${volleyball['ตุรกี']}');
-  print('ไทย Score is ${volleyball['ไทย']}');
-  print('เซอร์เบีย Score is ${volleyball['เซอร์เบีย']}');
+  volleyball.forEach((key, value) {
+    print('${key} score is ${value}');
+  });
+
+  // print('ญี่ปุ่น Score is ${volleyball['ญี่ปุ่น']}');
+  // print('สหรัฐอเมริกา Score is ${volleyball['สหรัฐอเมริกา']}');
+  // print('ตุรกี Score is ${volleyball['ตุรกี']}');
+  // print('ไทย Score is ${volleyball['ไทย']}');
+  // print('เซอร์เบีย Score is ${volleyball['เซอร์เบีย']}');
 }
